@@ -1,6 +1,6 @@
 name: Test
 
-on: [issue, push, pull_request]
+on: [issues, push, pull_request]
 
 jobs:
   build:
@@ -12,6 +12,6 @@ jobs:
     
     - name: Run Kebechet
       uses: cermakm/kebechet-action@master
-      if: github.event == 'issue'
+      if: github.event == 'issues'
       with:
         token: '{{ secrets.GITHUB_TOKEN }}'
