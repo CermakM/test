@@ -1,6 +1,6 @@
 name: Blank
 
-on: [push]
+on: [issue, push, pull_request]
 
 jobs:
   build:
