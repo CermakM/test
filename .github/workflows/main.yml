@@ -1,0 +1,17 @@
+name: Test
+
+on: [issue, push, pull_request]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    
+    - name: Run Kebechet
+      uses: cermakm/kebechet-action@master
+      if: github.event == 'issue'
+      with:
+        token: '{{ secrets.GITHUB_TOKEN }}'
