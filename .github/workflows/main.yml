@@ -11,7 +11,7 @@ jobs:
     - uses: actions/checkout@v1
     
     - name: Run Kebechet
-      uses: cermakm/kebechet-action@master
+      uses: cermakm/kebechet/action@action
       if: github.event == 'issues'
       with:
         token: '{{ secrets.GITHUB_TOKEN }}'
