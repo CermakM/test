@@ -12,6 +12,7 @@ jobs:
     
     - name: Run Kebechet
       uses: cermakm/kebechet-action@master
+      env:
+        GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
       with:
-        token: '${{ secrets.GITHUB_TOKEN }}'
         ssh_key: '${{ secrets.KEBECHET_SSH_PRIVATE_KEY }}'
