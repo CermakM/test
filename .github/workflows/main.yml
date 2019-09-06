@@ -14,3 +14,4 @@ jobs:
       uses: cermakm/kebechet-action@master
       with:
         token: '${{ secrets.GITHUB_TOKEN }}'
+        ssh_key: '${{ secrets.KEBECHET_SSH_PRIVATE_KEY }}'
