@@ -1,0 +1,9 @@
+repositories:
+  - slug: CermakM/test
+    token: '{KEBECHET_TOKEN}'
+    managers:
+      - name: update
+        configuration:
+          labels: [bot]
+      - name: info
+          
