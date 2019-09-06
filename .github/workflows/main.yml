@@ -1,6 +1,6 @@
 name: Test
 
-on: [issues, push, pull_request]
+on: [issues, issue_comment, push, pull_request, release]
 
 jobs:
   build:
