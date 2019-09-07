@@ -16,4 +16,4 @@ jobs:
         GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
       with:
         ssh_key: '${{ secrets.KEBECHET_SSH_PRIVATE_KEY }}'
-      if: github.event == 'issues' || github.event == 'issue_comment'
+      if: github.event_name == 'issues' || github.event_name == 'issue_comment'
