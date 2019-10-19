@@ -10,10 +10,10 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     
-    - name: Run Kebechet
-      uses: cermakm/kebechet-action@master
-      env:
-        GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
-      with:
-        ssh_key: '${{ secrets.KEBECHET_SSH_PRIVATE_KEY }}'
-      if: github.event_name == 'issues' || github.event_name == 'issue_comment'
+    # - name: Run Kebechet
+    #   uses: cermakm/kebechet-action@master
+    #   env:
+    #     GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+    #   with:
+    #     ssh_key: '${{ secrets.KEBECHET_SSH_PRIVATE_KEY }}'
+    #   if: github.event_name == 'issues' || github.event_name == 'issue_comment'
