@@ -1,6 +1,6 @@
 name: Release
 
-on: [issues, issue_comment]
+on: [issues]
 
 jobs:
   build:
