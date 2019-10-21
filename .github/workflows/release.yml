@@ -19,7 +19,7 @@ jobs:
     - name: Release
       uses: cermakm/python-release-action@experimental
       env: 
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.USER_TOKEN }}
       with:
         # Whether to generate changelog
         changelog: true
