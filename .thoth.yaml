@@ -1,3 +1,6 @@
+host: khemenu.thoth-station.ninja
+tls_verify: false
+
 repositories:
   - slug: CermakM/test
     token: '{KEBECHET_TOKEN}'
@@ -6,4 +9,12 @@ repositories:
         configuration:
           labels: [bot]
       - name: info
-          
+
+runtime_environments:
+- name: centos:7
+  operating_system:
+    name: centos
+    version: "7"
+  python_version: "3.6"
+  recommendation_type: latest
+  limit_latest_versions: null
